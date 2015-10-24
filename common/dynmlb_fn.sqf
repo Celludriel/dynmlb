@@ -17,7 +17,7 @@ if(isNil "dynMlbFnLoaded") then {
 		_radius = _this select 1;
 		_vehicleToFit = _this select 2;
 
-		[_location, [0, _radius], random 360, 0, 0, _vehicleToFit] call SHK_pos
+		[_location, [0, _radius], random 360, 0, [0,0], _vehicleToFit] call SHK_pos
 	};
 
 	pAddActiveMission = {

@@ -13,7 +13,7 @@ class Mission
 		"a3_characters_f",
 		"a3_map_altis"
 	};
-	randomSeed=4714475;
+	randomSeed=849300;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -43,7 +43,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14729.919,17.91,16710.779};
+					position[]={14736.309,17.91,16720.516};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -59,8 +59,8 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={14852.673,17.91,16743.758};
-			name="spawn_position";
+			position[]={14040.733,26.395344,18730.672};
+			name="missionlocation";
 			type="Empty";
 		};
 	};
@@ -75,7 +75,7 @@ class Intro
 	{
 		"a3_map_altis"
 	};
-	randomSeed=14589818;
+	randomSeed=14470045;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -105,7 +105,7 @@ class OutroWin
 	{
 		"a3_map_altis"
 	};
-	randomSeed=9777995;
+	randomSeed=12860366;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -135,7 +135,7 @@ class OutroLoose
 	{
 		"a3_map_altis"
 	};
-	randomSeed=16154014;
+	randomSeed=9587859;
 	class Intel
 	{
 		timeOfChanges=1800.0002;

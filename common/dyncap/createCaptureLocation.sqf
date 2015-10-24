@@ -1,3 +1,5 @@
+diag_log format ["Calling createCaptureLocation.sqf: %1", _this];
+
 if (!isServer) exitWith {};
 
 [] call compileFinal preprocessFileLineNumbers "common\dyncap\dyncap_fn.sqf";
