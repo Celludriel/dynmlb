@@ -21,7 +21,7 @@
 */
 
 // File Locations / Folders
-T8U_dir_ROOT		= "common\T8\";
+T8U_dir_ROOT		= "dynmlb\common\T8\";
 T8U_dir_FNCS		= "T8_fncs\";
 T8U_dir_TASK		= "T8_tasks\";
 T8U_dir_SUPP		= "T8_supports\";
@@ -31,7 +31,7 @@ T8U_dir_SUPP		= "T8_supports\";
 T8U_var_useHC		= false;
 
 // include the Hint Broadcast
-#include <common\T8\T8_UnitsHB.sqf>
+#include <dynmlb\common\T8\T8_UnitsHB.sqf>
 
 
 // Rest of the Script is Server Only!
@@ -45,7 +45,7 @@ if ( _exit ) exitWith {};
 #include <T8_UnitsCONFIG.sqf>
 
 // include the T8_Units functions
-#include <common\T8\T8_Units.sqf>
+#include <dynmlb\common\T8\T8_Units.sqf>
 
 // debug marker delteion queue
 T8U_var_DebugMarkerCache = [];

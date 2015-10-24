@@ -1,4 +1,4 @@
-#include "common\dyncap\Defines.hpp"
+#include "dynmlb\common\dyncap\Defines.hpp"
 
 enableDebugConsole = 2;
 
