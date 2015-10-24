@@ -1,8 +1,6 @@
-diag_log format ["Calling createCaptureLocation.sqf: %1", _this];
-
 if (!isServer) exitWith {};
 
-[] call compileFinal preprocessFileLineNumbers "common\dyncap\dyncap_fn.sqf";
+[] call compileFinal preprocessFileLineNumbers "dyncap\dyncap_fn.sqf";
 
 _location = _this select 0;
 _captureRadius = _this select 1;
@@ -30,9 +28,9 @@ _captureBuilding setVariable ["owner", _side, true];
 _captureBuilding setVariable ["marker", _marker, true];
 
 // spawn server thread
-[_captureBuilding, _captureRadius, _captureTime] execVM "common\dyncap\dynServerCaptureMonitor.sqf";
+[_captureBuilding, _captureRadius, _captureTime] execVM "dyncap\dynServerCaptureMonitor.sqf";
 
 // spawn client threads
-[[[_captureBuilding,_captureRadius,_captureTime],"common\dyncap\dynClientCaptureMonitor.sqf"],"BIS_fnc_execVM",true,true] call BIS_fnc_MP;
+[[[_captureBuilding,_captureRadius,_captureTime],"dyncap\dynClientCaptureMonitor.sqf"],"BIS_fnc_execVM",true,true] call BIS_fnc_MP;
 
 _captureBuilding
