@@ -14,7 +14,7 @@ diag_log format ["MissionData: %1", _missionData];
 
 // setup capture positions
 _captureLocations = [];
-for "_i" from 1 to _amountOfCapturePoints do {
+for "_capturePoint" from 1 to _amountOfCapturePoints do {
 	_captureLocations pushBack ([_location, _radius, "Land_Cargo_Patrol_V1_F"] call pFindRandomOffRoadLandPositionFromLocation);
 };
 
@@ -34,17 +34,16 @@ diag_log format ["MissionData: %1", _missionData];
 /*nul = [[[1, [_location,2,300,[true,false],[true,false,true],false,[20,10],[10,5],[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],nil,nil,1]]], 300, true] execVM "common\LV\LV_functions\LV_fnc_simpleCachev2.sqf";*/
 
 _spawns = [];
-for "_i" from 1 to 10 do {
-	_markerName = format ["%1_spawnmarker_%2", _missionCode, _i];
+for [{_spawnMarkerSuffix=0},{_spawnMarkerSuffix<10},{_spawnMarkerSuffix=_spawnMarkerSuffix+1}] do {
+	_markerName = format ["%1_spawnmarker_%2", _missionCode, _spawnMarkerSuffix];
 	diag_log format ["_markerName: %1, %2, %3", _markerName, _location, _radius];
 	_spawnLocation = [_location, _radius, "O_G_Soldier_F"] call pFindRandomOffRoadLandPositionFromLocation;
 	diag_log format ["_spawnLocation: %1", _spawnLocation];
 	_marker = createMarker [_markerName, _spawnLocation];
 
-	_container = [ "INFANTRY", 5, 0, east ] call T8U_rnd_SpawnContainer;
-	_spawns pushBack [[_container, _markerName], ["PATROL_URBAN"]];
+	_spawns pushBack [[[ "INFANTRY", 5, 0, east ] call T8U_rnd_SpawnContainer, _markerName], ["PATROL_URBAN"]];
 };
 
-[ _spawns ] spawn T8U_fnc_Spawn;
-
 diag_log format ["UnitsAtMarker: %1", _spawns];
+
+[ _spawns ] spawn T8U_fnc_Spawn;
