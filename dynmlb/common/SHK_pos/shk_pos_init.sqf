@@ -62,24 +62,24 @@
       pos = [parameters] call SHK_pos;
 */
 // Functions
-SHK_pos_getPos = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_getpos.sqf";
-SHK_pos_getPosMarker = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_getposmarker.sqf";
+SHK_pos_getPos = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_getpos.sqf";
+SHK_pos_getPosMarker = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_getposmarker.sqf";
 
 // Sub functions
-SHK_pos_fnc_findClosestPosition = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_findclosestposition.sqf";
-SHK_pos_fnc_getMarkerCorners = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getmarkercorners.sqf";
-SHK_pos_fnc_getMarkerShape = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getmarkershape.sqf";
-SHK_pos_fnc_getPos = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getpos.sqf";
-SHK_pos_fnc_getPosFromCircle = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getposfromcircle.sqf";
-SHK_pos_fnc_getPosFromEllipse = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getposfromellipse.sqf";
-SHK_pos_fnc_getPosFromRectangle = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getposfromrectangle.sqf";
-SHK_pos_fnc_getPosFromSquare = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_getposfromsquare.sqf";
-SHK_pos_fnc_isBlacklisted = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_isblacklisted.sqf";
-SHK_pos_fnc_isInCircle = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_isincircle.sqf";
-SHK_pos_fnc_isInEllipse = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_isinellipse.sqf";
-SHK_pos_fnc_isInRectangle = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_isinrectangle.sqf";
-SHK_pos_fnc_isSamePosition = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_issameposition.sqf";
-SHK_pos_fnc_rotatePosition = compile preprocessfilelinenumbers "common\shk_pos\shk_pos_fnc_rotateposition.sqf";
+SHK_pos_fnc_findClosestPosition = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_findclosestposition.sqf";
+SHK_pos_fnc_getMarkerCorners = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getmarkercorners.sqf";
+SHK_pos_fnc_getMarkerShape = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getmarkershape.sqf";
+SHK_pos_fnc_getPos = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getpos.sqf";
+SHK_pos_fnc_getPosFromCircle = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getposfromcircle.sqf";
+SHK_pos_fnc_getPosFromEllipse = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getposfromellipse.sqf";
+SHK_pos_fnc_getPosFromRectangle = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getposfromrectangle.sqf";
+SHK_pos_fnc_getPosFromSquare = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_getposfromsquare.sqf";
+SHK_pos_fnc_isBlacklisted = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_isblacklisted.sqf";
+SHK_pos_fnc_isInCircle = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_isincircle.sqf";
+SHK_pos_fnc_isInEllipse = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_isinellipse.sqf";
+SHK_pos_fnc_isInRectangle = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_isinrectangle.sqf";
+SHK_pos_fnc_isSamePosition = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_issameposition.sqf";
+SHK_pos_fnc_rotatePosition = compile preprocessfilelinenumbers "dynmlb\common\shk_pos\shk_pos_fnc_rotateposition.sqf";
 
 // Wrapper function
 // Decide which function to call based on parameters.
