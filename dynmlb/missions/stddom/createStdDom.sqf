@@ -43,6 +43,7 @@ for [{},{_spawnMarkerSuffix<8},{_spawnMarkerSuffix = _spawnMarkerSuffix+1}] do {
 	_markers pushBack _markerName;
 
 	_spawnLocation = [_location, _radius, "O_G_Soldier_F"] call pFindRandomOffRoadLandPositionFromLocation;
+	sleep 2;
 	diag_log format ["_spawnLocation: %1", _spawnLocation];
 
 	createMarker [_markerName, _spawnLocation];
@@ -58,12 +59,13 @@ for [{},{_spawnMarkerSuffix<10},{_spawnMarkerSuffix = _spawnMarkerSuffix+1}] do 
 	_markers pushBack _markerName;
 
 	_spawnLocation = [_location, _radius, "O_MBT_02_cannon_F"] call pFindRandomOffRoadLandPositionFromLocation;
+	sleep 2;
 	diag_log format ["_spawnLocation: %1", _spawnLocation];
 
 	createMarker [_markerName, _spawnLocation];
 	_markerName setMarkerSize [300, 300];
 
-	_spawns pushBack [[[ "VEHICLE", 5, 0, east ] call T8U_rnd_SpawnContainer, _markerName], ["PATROL_AROUND"]];
+	_spawns pushBack [[[ "VEHICLE", 1, 0, east ] call T8U_rnd_SpawnContainer, _markerName], ["PATROL_AROUND"]];
 };
 
 for [{},{_spawnMarkerSuffix<12},{_spawnMarkerSuffix = _spawnMarkerSuffix+1}] do {
@@ -73,12 +75,13 @@ for [{},{_spawnMarkerSuffix<12},{_spawnMarkerSuffix = _spawnMarkerSuffix+1}] do 
 	_markers pushBack _markerName;
 
 	_spawnLocation = [_location, _radius, "O_Heli_Attack_02_F"] call pFindRandomOffRoadLandPositionFromLocation;
+	sleep 2;
 	diag_log format ["_spawnLocation: %1", _spawnLocation];
 
 	createMarker [_markerName, _spawnLocation];
 	_markerName setMarkerSize [300, 300];
 
-	_spawns pushBack [[[ "HELICOPTER", 5, 0, east ] call T8U_rnd_SpawnContainer, _markerName], ["PATROL_AROUND"]];
+	_spawns pushBack [[[ "HELICOPTER", 1, 0, east ] call T8U_rnd_SpawnContainer, _markerName], ["PATROL_AROUND"]];
 };
 
 _missionData pushBack _markers;

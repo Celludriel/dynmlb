@@ -5,12 +5,14 @@ class Mission
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"a3_map_altis"
+		"a3_map_altis",
+		"CUP_TrackedVehicles_M1_Abrams"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
+		"CUP_TrackedVehicles_M1_Abrams",
 		"a3_map_altis"
 	};
 	randomSeed=849300;
@@ -43,7 +45,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14736.309,17.91,16720.516};
+					position[]={14389.856,17.236635,17975.324};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -52,6 +54,19 @@ class Mission
 					skill=0.60000002;
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={14393.595,17.298843,17979.141};
+			azimut=-36.342255;
+			id=1;
+			side="EMPTY";
+			vehicle="CUP_B_M1A1_DES_US_Army";
+			skill=0.60000002;
 		};
 	};
 	class Markers

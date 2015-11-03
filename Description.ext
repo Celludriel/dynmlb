@@ -1,10 +1,11 @@
 #include "dynmlb\common\dyncap\Defines.hpp"
-#include "statusbar.hpp"
 
 enableDebugConsole = 2;
 
 class RscTitles
 {
+	#include "statusbar.hpp"
+
 	class CapProgressBar
 	{
 		idd = -1;
